@@ -12,7 +12,7 @@ public extension APIEndpoint where T == AppScreenshotSetsResponse {
         if let includes = includes { parameters.add(includes) }
         if let limit = limit { parameters["limit"] = limit }
         return APIEndpoint(
-            path: "appStoreVersions/\(id)/appScreenshotSets",
+            path: "appScreenshotSets/\(id)/appScreenshotSets",
             method: .get,
             parameters: parameters
         )
